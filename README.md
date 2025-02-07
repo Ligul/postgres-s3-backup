@@ -1,5 +1,8 @@
 # PostgreSQL S3 Backup Docker Image
 
+[![Docker Pulls](https://img.shields.io/docker/pulls/ligul/postgres-s3-backup)](https://hub.docker.com/r/ligul/postgres-s3-backup)
+[![Docker Image Size](https://img.shields.io/docker/image-size/ligul/postgres-s3-backup)](https://hub.docker.com/r/ligul/postgres-s3-backup)
+
 This Docker image provides automated PostgreSQL database backups to any S3-compatible storage (AWS S3, Cloudflare R2, MinIO, etc.).
 
 ## Features
@@ -81,8 +84,6 @@ docker build -t postgres-s3-backup .
 ## Supported S3-Compatible Services
 
 The image has been tested with:
-- Amazon S3
 - Cloudflare R2
-- MinIO
 
-Other S3-compatible services should work as well by setting the appropriate endpoint and provider.
+Other S3-compatible services (AWS S3, MinIO, etc.) should work as well by setting the appropriate endpoint and provider.
